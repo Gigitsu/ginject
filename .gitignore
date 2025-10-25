@@ -1,0 +1,23 @@
+##############
+### Elixir ###
+##############
+
+_build/
+cover/
+deps/
+doc/
+tmp/
+*.mo
+*.ez
+*.beam
+.fetch
+.elixir_ls/
+erl_crash.dump
+/config/*.secret.exs
+
+##################
+###  Dialyzer  ###
+##################
+
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
