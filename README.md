@@ -149,7 +149,7 @@ def deps do
 end
 ```
 
-Use the builtin Mox behaviour:
+Use the builtin Mox strategy:
 
 ```elixir
 # config/test.exs
