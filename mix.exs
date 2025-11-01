@@ -36,7 +36,7 @@ defmodule Ginject.MixProject do
       {:dialyxir, "~> 1.4", only: [:dev], runtime: false},
 
       # Test
-      {:excoveralls, "~> 0.10", only: :test},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
@@ -57,7 +57,17 @@ defmodule Ginject.MixProject do
       name: "ginject",
       canonical: "http://hexdocs.pm/ginject",
       source_url: "https://github.com/gigitsu/ginject",
-      extras: ["README.md", "LICENSE"]
+      extras: ["README.md", "LICENSE"],
+      groups_for_modules: [
+        Strategies: [
+          Ginject.Strategy,
+          Ginject.Strategy.BehaviourAsDefault,
+          Ginject.Strategy.Mox
+        ],
+        Testing: [
+          Ginject.Test
+        ]
+      ]
     ]
   end
 end
